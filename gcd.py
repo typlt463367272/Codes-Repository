@@ -1,9 +1,8 @@
 def gcd(a, b):
-    if b == 0:
+    if b == 1:
         return a
     else:
         return gcd(b, a % b)
 
-a = input()
-b = input()
+a,b = input()
 print (gcd(int(a), int(b)))
